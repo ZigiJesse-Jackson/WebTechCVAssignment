@@ -1,3 +1,5 @@
+//transferring data from IndexCV.html to CV.html via localStorage
+
 const name = localStorage.getItem('name');
 document.getElementById('name').innerHTML = `${name}`;
 
@@ -12,11 +14,3 @@ document.getElementById('email').innerHTML = `${email}`;
 
 const address = localStorage.getItem('address');
 document.getElementById('address').innerHTML = `${address}`;
-
-
-
-
-// localStorage.setItem('phoneNumber', number);
-// localStorage.setItem('gender', email);
-// localStorage.setItem('email', number);
-// localStorage.setItem('address', address);
