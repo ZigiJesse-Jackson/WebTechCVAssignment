@@ -1,0 +1,90 @@
+/*Flexbox rules for whole page*/
+
+.page {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 80vw;
+    margin: 50px auto 50px;
+}
+
+
+/*Flexbox rules dynamic section*/
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info>p {
+    text-align: center;
+}
+
+.big-text {
+    font-size: 2.5rem;
+}
+
+
+/*Flexbox rules for static section*/
+
+.static {
+    flex-direction: row;
+    display: flex;
+    flex: 1 1 0;
+}
+
+
+/*Rules for flexbox item meant to be on the left*/
+
+.left>li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+/*Rules for flexbox item meant to be on the right*/
+
+.right>li {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+/*Rule for info content*/
+
+.info {
+    flex: 1 1;
+}
+
+
+/*Rule for dates content*/
+
+.dates {
+    flex: 1 1;
+    margin-right: 5%;
+}
+
+
+/*Rule for hr tags*/
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: black;
+    height: 1px;
+}
+
+
+/*Rule for content in p tags*/
+
+
+/* p {
+    font-weight: bold;
+    font-size: 1.2rem;
+} */

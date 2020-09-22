@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CV Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="IndexCVSheet.css">
+    <script src="IndexCVconnect.js"></script>
+</head>
+<div class="page">
+
+    <body>
+        <h1>Ashesi CV Personal Information form</h1>
+
+        <div class="form-box">
+            <form id="CV-Data" action="CV.html" method="post">
+                <!-- action="CV.html" method="post"> -->
+
+                <div class="Input">
+                    <label>First Name:</label>
+                    <input type="text" name="First_Name" placeholder="...First Name..." required>
+                </div>
+
+                <div class="Input">
+                    <label>Middle Name:</label>
+                    <input type="text" name="Middle_Name" placeholder="...Middle Name(optional)..." requierd>
+                </div>
+
+                <div class="Input">
+                    <label>Last Name:</label>
+                    <input type="text" name="Last_Name" placeholder="...Last Name..." required>
+                </div>
+
+                <div class="Gender-Dropdown">
+                    <label for="gender">Select Gender:</label>
+                    <select id="gender-value">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div id='number' class="Input phone-number">
+                    <label>Phone Number:</label>
+                    <input type="text" name="phone-number" placeholder="...(+233) (0)54 345 2345..." oninvalid="alert('(+233) (0)54 345 2345 format\ne.g:\n024 634 0987\n+233 50 234 0987');" required pattern='^(\s+)?\+?\(?((\d{3})[-.\s]?|[0])?\)?\d{2}[-.\s]?\d{3}[-.\s]?\d{4}?(\s+)?$'>
+                </div>
+
+                <div id='mail' class="Input email">
+                    <label>E-mail:</label>
+                    <input type="email" name="email" placeholder="...someone@somewhere.com..." required pattern="^(\s+)?[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*(\s+)?$">
+                </div>
+
+                <div class="Input">
+                    <label>Address: </label>
+                    <input type="text" name="address" placeholder="...Address...">
+                </div>
+
+                <div class="Input submit">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </body>
+</div>
+
+</html>

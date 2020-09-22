@@ -1,0 +1,43 @@
+.page {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+.form-box {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    align-items: center;
+}
+
+.Input>input {
+    margin-bottom: 20px;
+    width: 20vw;
+    font-style: levitica;
+    text-align: center;
+}
+
+#number:invalid {
+    background-color: #ffdddd;
+}
+
+.Gender-Dropdown {
+    margin-bottom: 20px;
+    font-style: levitica;
+}
+
+::placeholder {
+    text-align: center;
+    font-style: levitica;
+}
+
+h1 {
+    text-align: center;
+    font-style: levitica;
+}
